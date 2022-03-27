@@ -1,0 +1,28 @@
+:root {
+    box-sizing: border-box;
+    $main-color: #F2F2F2;
+    $black: #1F2132;
+    $gray: #FAFAFA;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Lexend:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
