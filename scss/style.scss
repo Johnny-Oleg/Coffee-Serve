@@ -21,10 +21,13 @@
 	}
 }
 
+.📓☝️ {
+	margin-right: 534px;
+}
+
 .☝️📓 {
 	display: flex;
 	gap: 28px;
-	margin-right: 534px;
 	
 	&🔖 {
 		font-weight: 600;
@@ -83,7 +86,7 @@
 			height: 51px;
 			top: 40px;
 			left: 283px;
-			background-color: #007E5B;
+			background-color: $green;
 			z-index: 3;
 		}
 
@@ -143,6 +146,7 @@
 		line-height: 25px;
 		color: #FFFFFF;
 		position: relative;
+		transition: all 0.5s ease-out;
 
 		&::after {
 			content: '';
@@ -158,5 +162,160 @@
 			background-repeat: no-repeat;
 			box-shadow: 2px 8px 8px rgba(27, 29, 33, 0.1);
 		}
+
+		&:hover {
+			color: $black;
+			background-color: #D8D8D8;
+			box-shadow: 0 0 0 5px $main-color, 0 0 0 10px $black;
+		}
 	}
 }
+
+.📌 {
+	background-color: #FFFFFF;
+}
+
+.📦📌 {
+	background-color: $black;
+	margin-bottom: 113px;
+
+	&📓 {
+		width: 1173px; 		// + 20px for padding 10px
+		height: 141px;
+		margin: 0 auto;
+		// padding: 0 10px;
+		display: flex;
+
+	}
+}
+
+.📌📓 {
+	@include flex(space-between);
+	width: 100%;
+	margin-left: 23px;
+
+	&🔖 {
+		width: 159px;
+		height: 43px;
+		background-color: #ECE0D6;
+	}
+	
+	&🔖:first-child {
+		background-color: transparent;
+		font-family: 'Lexend';
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 32px;
+		letter-spacing: 0.2px;
+		color: #FFFFFF;
+	}
+
+	&🔖:nth-child(3) {
+		width: 269px;
+	}
+}
+
+.📌👁️‍🗨️📦 {
+	display: flex;
+	position: relative;
+	border-bottom: 1px solid #D8D8D8;
+	// gap: 87px;
+
+	&::before {
+		content: '';
+		width: 71px;
+		height: 71px;
+		position: absolute;
+		top: 52px;
+		right: 35px;
+		background-color: $green;
+		border-radius: 50%;
+		z-index: 3;
+	}
+
+	&::after {
+		content: '';
+		width: 86px;
+		height: 87px;
+		position: absolute;
+		right: 428px;
+		bottom: 135px;
+		background-image: url(../images/header-decor-3.svg);
+		z-index: 3;
+	}
+}
+
+.📌👁️‍🗨️ {
+	max-width: 595px;
+
+	&📖 {
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 22px;
+		letter-spacing: 1.14286px;
+		text-transform: uppercase;
+		color: #6B6867;
+
+		&📖 {
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 32px;
+			margin-bottom: 32px;
+			color: #6B6867;
+		}
+	}
+
+	&📓 {
+		font-family: 'Lexend';
+		font-weight: 400;
+		font-size: 56px;
+		line-height: 64px;
+		letter-spacing: 0.175px;
+		color: $black;
+		margin-top: 23px;
+		margin-bottom: 16px;
+		white-space: nowrap;
+	}
+
+	&💠 {
+		width: 390px;
+		height: 471px;
+		margin-right: 68px;
+		margin-bottom: 60px;
+		margin-left: 87px;
+		background-color: #D8D8D8;
+	}
+
+	&🔎 {
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 25px;
+		color: $green;
+	}
+}
+
+.👁️‍🗨️🔎💠 {
+	margin-bottom: 4px;
+	margin-left: 15px;	
+	vertical-align: middle;
+}
+
+.🛒 {
+	background-color: #FFFFFF;
+
+	&👁️‍🗨️ {
+		@include flex(space-between);
+		margin-top: 80px;
+		margin-bottom: 48px;
+		// gap: 613px;
+	}
+
+	.📌👁️‍🗨️📓.🛒 {
+		margin: 0;
+	}
+
+	.📌👁️‍🗨️🔎.🛒 {
+		color: #6DCCCC;
+	}
+}
+
