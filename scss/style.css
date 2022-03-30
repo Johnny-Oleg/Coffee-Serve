@@ -394,4 +394,76 @@ a {
 .🛒 .📌👁️‍🗨️🔎.🛒 {
   color: #6DCCCC;
 }
+
+.🛒📦 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  margin-bottom: 80px;
+}
+
+.🛒📦🔖 {
+  width: 360px;
+  height: 510px;
+  padding: 50px 85px 44px;
+  text-align: center;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.🛒📦🔖:hover {
+  border: 1px solid #FF825B;
+}
+
+.🛒🔖💠 {
+  width: 190px;
+  height: 243px;
+  background-color: #D8D8D8;
+}
+
+.🛒🔖📖 {
+  font-family: 'Lexend';
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  color: #1F2132;
+  white-space: nowrap;
+  margin-top: 36px;
+  margin-bottom: 8px;
+}
+
+.🛒🔖📖📖 {
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.0625px;
+  color: #FF825B;
+  margin-bottom: 32px;
+}
+
+.🛒🔖🆗 {
+  width: 204px;
+  height: 48px;
+  background: #FFFFFF;
+  border: 1px solid #E3E3E3;
+  border-radius: 31.5449px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #222223;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.🛒🔖🆗:hover {
+  font-weight: 700;
+  color: #ECE0D6;
+  background-color: #1F2132;
+}
 /*# sourceMappingURL=style.css.map */
