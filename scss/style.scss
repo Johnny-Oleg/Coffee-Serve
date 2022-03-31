@@ -6,9 +6,10 @@
 }
 
 .📦☝️ {
-	@include flex(space-between);
+	max-width: 1384px;
 	height: 79px;
-	margin-bottom: 100px;
+	@include flex(space-between);
+	margin: 0 auto 100px;
 	border-bottom: 1px solid $main-black;
 }
 
@@ -34,6 +35,31 @@
 		font-size: 14px;
 		line-height: 19px;
 		color: $main-black;
+		position: relative;
+
+		&::before,
+		&::after {
+			content: '';
+			width: 10px;
+			height: 10px;
+			position: absolute;
+		}
+		
+		&:hover {
+			&::before {
+				border-top: 2px solid $orange;
+				border-left: 2px solid $orange;
+				top: -3px;
+				left: -6px;
+			}
+		
+			&::after {
+				border-right: 2px solid $orange;
+				border-bottom: 2px solid $orange;
+				right: -6px;
+				bottom: -3px;
+			}
+		}
 	}
 }
 
@@ -81,7 +107,7 @@
 		position: absolute;
 		border-radius: 50%;
 
-		&.--one {
+		&.💎 {
 			width: 51px;
 			height: 51px;
 			top: 40px;
@@ -90,7 +116,7 @@
 			z-index: 3;
 		}
 
-		&.--two {
+		&.💎💎 {
 			width: 121px;
 			height: 121px;
 			top: 160px;
@@ -99,12 +125,12 @@
 			z-index: 3;
 		}
 
-		&.--three {
+		&.💎💎💎 {
 			width: 191px;
 			height: 191px;
 			top: 300px;
 			left: 217px;
-			background-color: #FF825B;
+			background-color: $orange;
 			z-index: 1;
 		}
 	}
@@ -144,7 +170,7 @@
 		font-weight: 700;
 		font-size: 18px;
 		line-height: 25px;
-		color: #FFFFFF;
+		color: $main-white;
 		position: relative;
 		transition: all 0.5s ease-out;
 
@@ -156,7 +182,7 @@
 			top: 21px;
 			right: 36px;
 			border-radius: 50%;
-			background-color: #FF825B;
+			background-color: $orange;
 			background-image: url(../images/btn-arrow.svg);
 			background-position: center;
 			background-repeat: no-repeat;
@@ -172,7 +198,7 @@
 }
 
 .📌 {
-	background-color: #FFFFFF;
+	background-color: $main-white;
 }
 
 .📦📌 {
@@ -185,7 +211,6 @@
 		margin: 0 auto;
 		// padding: 0 10px;
 		display: flex;
-
 	}
 }
 
@@ -207,7 +232,7 @@
 		font-size: 24px;
 		line-height: 32px;
 		letter-spacing: 0.2px;
-		color: #FFFFFF;
+		color: $main-white;
 	}
 
 	&🔖:nth-child(3) {
@@ -301,13 +326,12 @@
 }
 
 .🛒 {
-	background-color: #FFFFFF;
+	background-color: $main-white;
 
 	&👁️‍🗨️ {
 		@include flex(space-between);
 		margin-top: 80px;
 		margin-bottom: 48px;
-		// gap: 613px;
 	}
 
 	.📌👁️‍🗨️📓.🛒 {
@@ -335,7 +359,7 @@
 			&:hover {
 				// width: 362px;
 				// height: 512px;
-				border: 1px solid #FF825B;
+				border: 1px solid $orange;
 			}
 		}
 	}
@@ -363,14 +387,14 @@
 		font-size: 20px;
 		line-height: 24px;
 		letter-spacing: 0.0625px;
-		color: #FF825B;
+		color: $orange;
 		margin-bottom: 32px;
 	}
 
 	&🔖🆗 {
 		width: 204px;
 		height: 48px;
-		background: #FFFFFF;
+		background: $main-white;
 		border: 1px solid #E3E3E3;
 		border-radius: 31.5449px;
 		font-weight: 500;
@@ -411,7 +435,7 @@
 			width: 555px;
 			height: 164px;
 			@include flex(space-around);
-			background-color: #FFFFFF;
+			background-color: $main-white;
 		}
 
 		.♨️🔖👁️‍🗨️ {
@@ -449,7 +473,7 @@
 
 		.📌👁️‍🗨️📓.📓 {
 			margin-top: 16px;	
-			color: #FFFFFF;
+			color: $main-white;
 		}
 	}
 
@@ -466,7 +490,7 @@
 			.🖼️🔖💠 {
 				width: 100%;
 				height: 100%;
-				background-color: #FFFFFF;
+				background-color: $main-white;
 			}
 		}
 
@@ -514,13 +538,13 @@
 	&📦 {
 		display: flex;
 		gap: 31px;
-		padding-bottom: 100px; // ?!
+		padding-bottom: 100px;
 
 		.❓📦🔖 {
 			max-width: 487.5px;
 			margin-bottom: 20px;
 			padding: 18px 20px;
-			background-color: #FFFFFF;
+			background-color: $main-white;
 			transition: all 0.5s ease-out;
 
 			.❓🔖📓 {
@@ -562,3 +586,177 @@
 	}
 }
 
+.🔂 {
+	background-color: $main-white;
+
+	&📦 {
+		padding: 100px 30px 100px 48px;
+		position: relative;
+
+		&🔖 {
+			display: flex !important;
+			justify-content: space-between;
+			align-items: center;
+
+			.🔂🔖💠 {
+				width: 320px;
+				height: 320px;
+				border-radius: 180px;
+				background-color: #EAEEF3;
+			}
+
+			.🔂🔖👁️‍🗨️ {
+				max-width: 653px;
+				max-height: 379px;
+
+				.🔂🔖🌟 {
+					display: flex !important;
+				}
+
+				.🔂🔖📖 {
+					font-family: 'Lexend';
+					font-weight: 400;
+					font-size: 32px;
+					line-height: 48px;
+					letter-spacing: 0.177778px;
+					color: $main-black;
+					display: inline-block;
+					margin-top: 50px;
+					margin-bottom: 43px;
+				}
+
+				.🔂🔖📓 {
+					font-weight: 700;
+					font-size: 20px;
+					line-height: 27px;
+					color: $main-black;
+				}
+			}
+		}
+	}
+}
+
+.slick-dots {
+	display: flex;
+	gap: 16px;
+	position: absolute;
+	bottom: 106px;
+	right: 71px;
+	list-style: none;
+}
+
+.slick-dots li {
+	width: 14px;
+	height: 14px;
+}
+
+.slick-dots button {
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	background-color: transparent;
+	color: transparent;
+	border: 1px solid $black;
+	cursor: pointer;
+}
+
+.slick-active button {
+	background-color: #6DCCCC;
+	border-color: #6DCCCC;
+}
+
+.👇 {
+	padding-bottom: 63px;
+	background-color: $green;
+
+	.👇📦 {
+		margin-bottom: 64px;
+		padding-top: 61px;
+		border-bottom: 1px solid $main-white;
+		text-align: center;
+
+		&📓 {
+			font-family: 'Lexend';
+			font-weight: 400;
+			font-size: 40px;
+			line-height: 52px;
+			letter-spacing: 0.2px;
+			color: $main-white;
+		}
+
+		&🔖 {
+			width: 510px;
+			height: 72px;
+			@include flex(space-between);
+			margin: 36px auto 63px;
+			padding: 8px 8px 8px 19px;
+			background-color: $main-white;
+			border-radius: 8px;
+
+			.👇🔖💠 {
+				width: 20px;
+				height: 20px;
+			}
+
+			.👇🔖📖 {
+				flex-grow: 2;
+				margin: 0 11px;
+				font-family: 'Manrope';
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 22px;
+				color: #8D8E90;
+			}
+
+			.👇🔖🆗 {
+				width: 181px;
+				height: 56px;
+				background-color: #F9BF62;
+				border-radius: 4px;
+				cursor: pointer;
+				font-family: 'Inter';
+				font-weight: 600;
+				font-size: 18px;
+				line-height: 22px;
+				color: #141A50;
+			}
+		}
+	}
+
+	.👇📓 {
+		@include flex(center);
+		gap: 56px;
+
+		&🔖 {
+			font-family: 'Inter';
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 22px;
+			color: $main-white;
+			position: relative;
+
+			&::before,
+			&::after {
+				content: '';
+				width: 10px;
+				height: 10px;
+				position: absolute;
+			}
+
+			&:hover {
+				&::before {
+					border-top: 2px solid $orange;
+					border-left: 2px solid $orange;
+					top: -3px;
+					left: -6px;
+				}
+				&::after {
+					border-right: 2px solid $orange;
+					border-bottom: 2px solid $orange;
+					right: -6px;
+					bottom: -3px;
+				}
+			}
+		}
+	}
+}

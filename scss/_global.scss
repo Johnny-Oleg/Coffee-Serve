@@ -4,9 +4,11 @@
 
 $main-color: #F2F2F2;
 $main-black: #1B1D21;
+$main-white: #FFFFFF;
 $black: #1F2132;
 $gray: #FAFAFA;
 $green:  #007E5B;
+$orange: #FF825B;
 
 *,
 *::before,
@@ -39,14 +41,13 @@ a {
     text-decoration: none;
 }
 
+input {
+    border: none;
+    outline: none;
+}
+
 .📦 {
     max-width: 1160px;
     margin: 0 auto;
     padding: 0 10px;
-}
-
-.📦☝️ {
-    max-width: 1384px;
-    margin: 0 auto;
-    // padding: 0 10px;
 }
