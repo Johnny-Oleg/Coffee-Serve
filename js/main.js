@@ -39,7 +39,8 @@ $(function () {
         // ],
     });
 
-	// $('.nav__btn').on('click', function () {
-    //     $('.nav__btn').toggleClass('active');
-	// })
+	$('.☝️👤📓').on('click', function () {
+        $(this).toggleClass('⚠️');
+        $('	.☝️📓').toggleClass('⚠️');
+	})
 })

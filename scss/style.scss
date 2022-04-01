@@ -43,6 +43,7 @@
 			width: 10px;
 			height: 10px;
 			position: absolute;
+			transition: all 0.5s ease-out;
 		}
 		
 		&:hover {
@@ -74,6 +75,10 @@
 	& svg {	
 		margin-left: 16px;
 	}
+}
+
+.☝️👤📓 {
+	display: none;
 }
 
 .☝️👁️‍🗨️ {
@@ -206,10 +211,9 @@
 	margin-bottom: 113px;
 
 	&📓 {
-		width: 1173px; 		// + 20px for padding 10px
+		max-width: 1173px;
 		height: 141px;
 		margin: 0 auto;
-		// padding: 0 10px;
 		display: flex;
 	}
 }
@@ -357,8 +361,6 @@
 			transition: all 0.5s ease-out;
 
 			&:hover {
-				// width: 362px;
-				// height: 512px;
 				border: 1px solid $orange;
 			}
 		}
@@ -741,6 +743,7 @@
 				width: 10px;
 				height: 10px;
 				position: absolute;
+				transition: all 0.5s ease-out;
 			}
 
 			&:hover {
@@ -760,3 +763,5 @@
 		}
 	}
 }
+
+@import '_media.scss';
