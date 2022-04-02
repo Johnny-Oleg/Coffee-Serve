@@ -4,6 +4,11 @@ $(function () {
         $(this).parent().addClass('⚠️');
     })
 
+    $('.☝️👤📓').on('click', function () {
+        $(this).toggleClass('⚠️');
+        $('	.☝️📓').toggleClass('⚠️');
+    })
+
 	$('.🔂📦').slick({
         dots: true,
 		arrows: false,
@@ -16,31 +21,5 @@ $(function () {
         autoplaySpeed: 3000,
         fade: true,
         cssEase: 'linear',
-        // responsive: [
-        //     {
-        //         breakpoint: 891,
-        //         settings: {
-        //             slidesToShow: 3,
-        //             arrows: false,
-        //             dots: true,
-        //         },
-        //         breakpoint: 461,
-        //         settings: {
-        //             slidesToShow: 1,
-        //             arrows: false,
-        //             dots: true,
-        //         },
-        //         breakpoint: 361,
-        //         settings: {
-        //             variableWidth: false,
-        //             slidesToShow: 1,
-        //         },
-        //     },
-        // ],
-    });
-
-	$('.☝️👤📓').on('click', function () {
-        $(this).toggleClass('⚠️');
-        $('	.☝️📓').toggleClass('⚠️');
-	})
+    })
 })

@@ -248,7 +248,6 @@
 	display: flex;
 	position: relative;
 	border-bottom: 1px solid #D8D8D8;
-	// gap: 87px;
 
 	&::before {
 		content: '';
@@ -354,7 +353,7 @@
 		margin-bottom: 80px;
 
 		&🔖 {
-			width: 360px;
+			max-width: 360px;
 			height: 510px;
 			padding: 50px 85px 44px;
 			text-align: center;
@@ -434,7 +433,7 @@
 		padding-bottom: 100px;
 
 		&🔖 {
-			width: 555px;
+			max-width: 555px;
 			height: 164px;
 			@include flex(space-around);
 			background-color: $main-white;
@@ -486,8 +485,8 @@
 		gap: 30px;
 
 		&🔖 {
-			width: 360px;
-			height: 320px;
+			max-width: 360px;
+			max-height: 320px;
 
 			.🖼️🔖💠 {
 				width: 100%;
@@ -498,8 +497,8 @@
 
 		&🔖.💠 {
 			grid-column: 2/-1;
-			width: 750px;
-			height: 320px;
+			max-width: 750px;
+			max-height: 320px;
 			
 			.🖼️🔖💠 {
 				width: 100%;
@@ -510,8 +509,6 @@
 }
 
 .❓ {
-	// padding-top: 100px;
-	// padding-bottom: 100px;
 	background-color: $gray;
 
 	.📦❓ {
@@ -702,7 +699,8 @@
 
 			.👇🔖📖 {
 				flex-grow: 2;
-				margin: 0 11px;
+				margin: 0 6px;
+				padding: 0 5px;
 				font-family: 'Manrope';
 				font-weight: 400;
 				font-size: 16px;

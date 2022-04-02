@@ -62,11 +62,73 @@
 	.📌👁️‍🗨️📦::after {
 		right: 390px;
 	}
+	.🛒👁️‍🗨️ {
+		justify-content: space-around;
+	}
+	.🛒📦 {
+		gap: 20px;
+	}
+	.🛒📦🔖 {
+		padding-right: 30px;
+		padding-left: 30px;
+	}
+	.♨️📦 {
+		gap: 20px;
+		padding: 0 10px 100px;
+	}
+	.🖼️📦 {
+		gap: 10px;
+	}
+}
+
+@media (max-width: 1100px) {
+	.🔂📦🔖 .🔂🔖💠 {
+		width: 280px;
+		height: 280px;
+	}
+	.🔂📦🔖 .🔂🔖👁️‍🗨️ .🔂🔖📖 {
+		font-size: 28px;
+		line-height: 36px;
+	}
 }
 
 @media (max-width: 1024px) {
 	.📦☝️ {
 		gap: 40px;
+	}
+	.🖼️📦 {
+		padding: 0 10px;
+	}
+	.🖼️📦🔖 {
+		max-width: 340px;
+		max-height: 300px;
+	}
+}
+
+@media (max-width: 1030px) {
+	.☝️👁️‍🗨️ {
+		gap: 30px;
+		padding: 0 10px;
+	}
+	.👁️‍🗨️📦📓 {
+		font-size: 55px;
+		line-height: 65px;
+	}
+	.❓📦 {
+		justify-content: center;
+	}
+	.❓📦 .❓📦🔖 {
+		padding: 15px;
+	}
+	.❓📦 .❓📦🔖 .❓🔖📓 {
+		width: 400px;
+	}
+	.🔂📦🔖 {
+		gap: 20px;
+	}
+	.🔂📦🔖 .🔂🔖💠 {
+		width: 250px;
+		height: 250px;
 	}
 }
 
@@ -86,6 +148,23 @@
 	}
 	.📌👁️‍🗨️💠 {
 		margin-left: 50px;
+	}
+	.♨️🔖💠 {
+		width: 80px;
+		height: 80px;
+	}
+	.❓📦 {
+		gap: 20px;
+	}
+	.❓📦 .❓📦🔖,
+	.❓📦 .❓📦🔖.⚠️ {
+		padding: 15px 10px;
+	}
+	.❓📦 .❓📦🔖 .❓🔖📓 {
+		width: 370px;
+	}
+	.❓📦 .❓📦🔖.⚠️ .❓🔖📖 {
+		max-width: 370px;
 	}
 }
 
@@ -242,6 +321,22 @@
 	.📌👁️‍🗨️💠 {
 		margin: 0 auto 30px;
 	}
+	.🛒📦🔖 {
+		padding: 30px 20px;
+	}
+	.♨️📦 {
+		gap: 10px;
+	}
+	.♨️🔖💠 {
+		width: 18%;
+		height: auto;
+	}
+	.❓📦 .❓📦🔖 .❓🔖📓 {
+		width: 360px;
+	}
+	.👇 .👇📓 {
+		gap: 30px;
+	}
 }
 
 @media (max-width: 840px) {
@@ -254,6 +349,35 @@
 	.📌👁️‍🗨️📦::after {
 		right: 570px;
 	}
+	.🛒📦 {
+		gap: 10px;
+	}
+	.🛒📦🔖 {
+		height: auto;
+		padding: 20px 0;
+	}
+	.♨️📦 {
+		grid-template-columns: 1fr;
+	}
+	.♨️📦🔖 {
+		width: 70%;
+		margin: 0 auto;
+	}
+	.❓📦 .❓📦🔖 .❓🔖📓 {
+		width: 90%;
+	}
+	.❓🔖💠 {
+		vertical-align: top;
+	}
+	.🔂📦🔖 .🔂🔖💠 {
+		width: 200px;
+		height: 200px;
+	}
+	.🔂📦🔖 .🔂🔖👁️‍🗨️ .🔂🔖📖 {
+		font-size: 24px;
+		line-height: 32px;
+		margin: 30px 0;
+	}
 }
 
 @media (max-width: 778px) {
@@ -262,6 +386,30 @@
 	}
 	.📌👁️‍🗨️📦::after {
 		right: 535px;
+	}
+	.🛒📦 {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+		margin-bottom: 30px;
+	}
+	.🖼️📦 {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+		gap: 15px;
+	}
+	.🖼️📦🔖 {
+		max-width: 360px;
+		max-height: 320px;
+	}
+	.🖼️📦🔖.💠 {
+		grid-column: 1/-1;
+		grid-row: 2/2;
+	}
+	.🔂📦 {
+		padding: 50px 30px;
+	}
+	.slick-dots {
+		bottom: 60px;
 	}
 }
 
@@ -310,6 +458,23 @@
 	.📌👁️‍🗨️📦::after {
 		right: 500px;
 	}
+	.❓ .📦❓ .❓👁️‍🗨️ {
+		padding-top: 50px;
+	}
+	.❓📦 {
+		padding-bottom: 50px;
+	}
+	.🔂📦🔖 .🔂🔖👁️‍🗨️ .🔂🔖📖 {
+		font-size: 20px;
+		line-height: 26px;
+	}
+	.👇 .👇📦📓 {
+		font-size: 36px;
+		line-height: 36px;
+	}
+	.👇 .👇📓 {
+		gap: 15px;
+	}
 }
 
 @media (max-width: 650px) {
@@ -318,6 +483,23 @@
 	}
 	.📌👁️‍🗨️📦::after {
 		right: 470px;
+	}
+	.♨️📦🔖 {
+		width: 90%;
+	}
+	.🖼️📦🔖 {
+		max-width: 340px;
+		max-height: 300px;
+	}
+	.🔂📦🔖 .🔂🔖👁️‍🗨️ .🔂🔖📖 {
+		font-size: 20px;
+		line-height: 26px;
+	}
+	.👇 {
+		padding-bottom: 40px;
+	}
+	.👇 .👇📦 {
+		margin-bottom: 40px;
 	}
 }
 
@@ -340,6 +522,19 @@
 		font-size: 40px;
 		line-height: 50px;
 	}
+	.🖼️📦 {
+		padding: 0 20px;
+	}
+	.🔂📦🔖 .🔂🔖💠 {
+		width: 150px;
+		height: 150px;
+	}
+	.👇 .👇📓 {
+		gap: 10px;
+	}
+	.👇 .👇📓🔖 {
+		font-size: 16px;
+	}
 }
 
 @media (max-width: 575px) {
@@ -355,6 +550,42 @@
 	}	
 	.📌👁️‍🗨️📦::after {
 		right: 435px;
+	}
+	.🖼️ {
+		padding-bottom: 100px;
+	}
+	.❓ .📦❓ .❓👁️‍🗨️ {
+		margin-bottom: 30px;
+	}
+	.❓📦 {
+		display: block;
+	}
+	.❓📦 .❓📦🔖, .❓📦 .❓📦🔖.⚠️ {
+		margin: 0 auto 20px;
+	}
+	.❓📦 .❓📦🔖.⚠️ .❓🔖📖 {
+		max-width: 100%;
+	}
+	.🔂📦🔖 {
+		display: block !important;
+	} 
+	.🔂📦🔖 .🔂🔖💠 {
+		width: 200px;
+		height: 200px;
+		margin: 0 auto 20px;
+	}
+	.👇 .👇📦📓 {
+	 font-size: 32px;
+	 line-height: 32px;
+	}
+	.👇 .👇📦🔖 {
+		width: 400px;
+	}
+}
+
+@media (max-width: 540px) {
+	.👇 .👇📓 {
+		flex-wrap: wrap;
 	}
 }
 
@@ -389,6 +620,42 @@
 	}	
 	.📌👁️‍🗨️📦::after {
 		right: 410px;
+	}
+	.🛒📦🔖 {
+		padding: 10px 0;
+	}
+	.🛒🔖📖 {
+		margin-top: 10px;
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.🛒🔖📖📖 {
+		margin-bottom: 10px;
+		font-size: 16px;
+	}
+	.🛒🔖🆗 {
+		width: 180px;
+	}
+	.♨️👁️‍🗨️ {
+		padding-top: 50px;
+		margin-bottom: 40px;
+	}
+	.♨️📦 {
+		padding-bottom: 50px;
+	}
+	.♨️📦🔖 {
+		width: 100%;
+	}
+	.🖼️👁️‍🗨️ {
+		padding-top: 50px;
+	}
+	.👇 .👇📦📓 {
+		font-size: 28px;
+		line-height: 28px;
+
+		br {
+			display: none;
+		}
 	}
 }
 
@@ -438,6 +705,40 @@
 	.📌👁️‍🗨️💠 {
 		width: 100%;
 	}
+	.🛒👁️‍🗨️ {
+		display: block;
+		text-align: center;
+		margin: 40px 0;
+	}
+	.🛒 .📌👁️‍🗨️📓.🛒 {
+		margin-bottom: 10px;
+	}
+	.🔂📦 {
+		padding: 30px 10px;
+	}
+	.🔂📦🔖 .🔂🔖💠 {
+		width: 150px;
+		height: 150px;
+	}
+	.🔂📦🔖 .🔂🔖👁️‍🗨️ .🔂🔖📖 {
+		font-size: 16px;
+		line-height: 24px;
+	}
+}
+
+@media (max-width: 450px) {
+	.♨️🔖💠 {
+		width: 15%;
+	}
+	.🖼️📦 {
+		grid-template-rows: repeat(2, 1fr);
+	}
+	.🖼️📦🔖.💠 {
+		display: none;
+	}
+	.slick-dots {
+		bottom: 35px;
+	}
 }
 
 @media (max-width: 425px) {
@@ -457,6 +758,42 @@
 	.📌👁️‍🗨️📓 {
 		font-size: 30px;
 		line-height: 30px;
+	}
+	.🛒📦 {
+		grid-template-columns: 1fr;
+	}
+	.🛒📦🔖:nth-last-child(-n+3) {
+		display: none;
+	}
+	.🛒📦🔖 {
+		margin: 0 auto;
+	}
+	.♨️📦🔖 {
+		height: 130px;
+		padding: 0 5px;
+	}
+	.♨️📦 .♨️🔖👁️‍🗨️ {
+		padding-left: 5px;
+	}
+	.♨️📦 .♨️🔖📓 {
+		font-size: 18px;
+		line-height: 24px;
+	}
+	.♨️📦 .♨️🔖📖 {
+		font-size: 14px;
+		line-height: 20px;
+	}	
+	.❓📦 {
+		padding-bottom: 30px;
+	}
+	.👇 .👇📦🔖 {
+		width: 350px;
+		margin: 30px auto 30px;
+	}
+	.👇 .👇📦🔖 .👇🔖🆗 {
+		width: 150px;
+		height: 40px;
+		font-size: 16px;
 	}
 }
 
@@ -486,5 +823,78 @@
 	}
 	.📌👁️‍🗨️💠 {
 		height: auto;
+	}
+	.📌👁️‍🗨️📓 {
+		white-space: initial;
+	}
+	.📌👁️‍🗨️💠 {
+		width: 90%;
+	}
+	.♨️📦🔖 {
+		height: 100px;
+	}
+	.♨️📦 .♨️🔖👁️‍🗨️ {
+		padding-left: 10px;
+	}
+	.♨️🔖💠 {
+		display: none;
+	}
+	.🖼️ {
+		padding-bottom: 30px;
+	}
+	.🖼️📦 {
+		grid-template-columns: 1fr;
+	}
+	.🖼️📦🔖:nth-last-child(-n+2) {
+		display: none;
+	}
+	.slick-dots {
+		right: 20px;
+	}
+	.👇 .👇📦📓 {
+		font-size: 24px;
+		line-height: 24px;
+	}
+	.👇 .👇📦🔖 {
+		width: 330px;
+	}
+	.👇 .👇📦🔖 .👇🔖📖 {
+		margin: 0;
+	}
+	.👇 .👇📦🔖 .👇🔖🆗 {
+		width: 100px;
+		height: 30px;
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 350px) {
+	.👇 .👇📦🔖 {
+		width: 300px;
+	}
+	.👇 .👇📦🔖 .👇🔖💠 {
+		display: none;
+	}
+	.👇 .👇📦🔖 {
+		padding: 5px;
+	}
+}
+
+@media (max-width: 325px) {
+	.📌👁️‍🗨️📓 {
+		font-size: 24px;
+		line-height: 24px;
+		white-space: normal;
+
+		br {
+			display: none;
+		}
+	}
+	.🖼️👁️‍🗨️ {
+		margin-bottom: 20px;
+		padding-top: 20px;
+	}
+	.👇 .👇📦🔖 {
+		width: 280px;
 	}
 }
