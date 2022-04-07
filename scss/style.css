@@ -440,6 +440,7 @@ input {
   height: 510px;
   padding: 50px 85px 44px;
   text-align: center;
+  border: 1px solid transparent;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
@@ -1702,6 +1703,7 @@ input {
   }
   .🛒📦🔖 {
     margin: 0 auto;
+    padding: 30px;
   }
   .♨️📦🔖 {
     height: 130px;
